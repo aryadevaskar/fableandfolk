@@ -30,14 +30,13 @@
 
 .hero-title {
   
-  font-size: 12rem;
-  font-weight: 700;
+  font-size: 19vw;
   margin-bottom: 1.5rem;
-  font-family: 'Georgia', serif;
+  font-family: 'DM Serif Display', serif;
 }
 
 .hero-title .dark {
-  color: #41241d;
+  color: #41241d
 }
 
 .hero-title .highlight {
