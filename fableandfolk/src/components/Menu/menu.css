@@ -1,0 +1,137 @@
+/* Import the necessary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400&family=DM+Serif+Display&display=swap');
+
+/* Kept from the original design: The main full-screen container */
+.menu-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem;
+  transition: padding 0.5s ease;
+  box-sizing: border-box;
+  background-color: #41241D; /* Original dark brown */
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  transition: clip-path 0.7s ease-in-out;
+  pointer-events: none;
+}
+
+/* Open state */
+.menu-overlay--open {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    pointer-events: auto;
+  }
+
+/* --- NEW STYLES for the Navigation --- */
+.menu-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Ensures text is centered */
+}
+
+.menu-navigation li a {
+  display: block;
+  color: #FEF6E0; /* Original off-white text color */
+  text-decoration: none;
+  /* Using a bold, blocky font like "Anton" for the new effect */
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(5.4rem, 27vw, 16.2rem);
+  line-height: 1.1;
+
+  /* This transition enables the bouncy stretch/squash animation */
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
+}
+
+/* 1. When you hover a link, STRETCH IT for first menu item */
+.menu-navigation li:nth-child(1) a:hover {
+    transform: scaleY(2);
+  }
+
+.menu-navigation ul:has(li:nth-child(1) a:hover) li:nth-child(2) a:not(:hover) {
+    transform-origin: center top;
+    transform: scaleY(1.2);
+   
+  }
+
+  .menu-navigation ul:has(li:nth-child(1) a:hover) li:nth-child(3) a:not(:hover) {
+    transform-origin: center top;
+    transform: scaleY(0.8);
+   
+  }
+
+  /* 1. When you hover a link, STRETCH IT for first menu item */
+.menu-navigation li:nth-child(2) a:hover {
+    transform: scaleY(2);
+  }
+
+.menu-navigation ul:has(li:nth-child(2) a:hover) li:nth-child(1) a:not(:hover) {
+    transform-origin: center top;
+    transform: scaleY(0.9);
+   
+  }
+
+  .menu-navigation ul:has(li:nth-child(2) a:hover) li:nth-child(3) a:not(:hover) {
+    transform-origin: center top;
+    transform: scaleY(0.9);
+   
+  }
+
+  /* 1. When you hover a link, STRETCH IT for first menu item */
+.menu-navigation li:nth-child(3) a:hover {
+    transform: scaleY(2);
+  }
+
+.menu-navigation ul:has(li:nth-child(3) a:hover) li:nth-child(1) a:not(:hover) {
+    transform-origin: center bottom;
+    transform: scaleY(0.9);
+   
+  }
+  
+
+  .menu-navigation ul:has(li:nth-child(3) a:hover) li:nth-child(2) a:not(:hover) {
+    transform-origin: center bottom;
+    transform: scaleY(1.2);
+   
+  }
+/* --- Kept from the original design: Corner Elements --- */
+
+/* The "Close" button using DM Sans */
+.menu-close-button {
+  position: absolute;
+  top: 2.5rem;
+  right: 4rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #FEF6E0;
+  background-color: transparent;
+  color: #FEF6E0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 0rem;
+}
+
+.menu-close-button:hover {
+  background-color: #FEF6E0;
+  color: #41241D;
+}
+
+/* The "F&f" logo using DM Serif Display */
+.menu-logo {
+  position: absolute;
+  bottom: 5rem;
+  right: 4.5rem;
+  font-family: "DM Serif Display", serif;
+  font-size: 8rem;
+  font-weight: 600;
+  color: #FEF6E0;
+}
+
+.logo-f-gold {
+  color: #FFBB00;
+}
