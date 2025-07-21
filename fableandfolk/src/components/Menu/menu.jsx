@@ -1,13 +1,10 @@
 import React from 'react';
 import './Menu.css';
 
-// Accept the new `isOpen` prop
 const Menu = ({ isOpen, onClose }) => {
-  // Conditionally create the className string
   const menuClassName = `menu-overlay ${isOpen ? 'menu-overlay--open' : ''}`;
 
   return (
-    // Use the dynamic className
     <div className={menuClassName}> 
       <button className="menu-close-button" onClick={onClose}>
         Close
