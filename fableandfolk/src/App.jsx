@@ -5,6 +5,9 @@ import HeroSection from "./components/Hero/hero";
 import AboutSection from "./components/About/About";
 import ProjectSection from "./components/Projects/projectSection";
 import ClientSection from "./components/Client/Client";
+import TickerBand from "./components/Ticker Band/tickerband";
+import ContactForm from "./components/Contact Form/contactform";
+import Footer from "./components/Footer/footer";
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <AboutSection />
       <ProjectSection />
       <ClientSection/>
+      <TickerBand text='Get in touch'/>
+      <ContactForm />
+      <Footer />
     </div>
   );
 }
