@@ -1,20 +1,16 @@
 "use client";
 import { useState } from "react";
 import "./hero.css";
-import Menu from "../Menu/menu";
+
+
 
 export default function HeroSection() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  
 
   return (
+    <>
     <section className="hero">
       <div className="hero-content">
-      <button className="hero-menuButton" onClick={toggleMenu}>
-      Menu
-          </button>
         <h1 className="hero-title">
           <span className="dark">Fable</span>
           <span className="dark">&</span>
@@ -29,7 +25,8 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <Menu isOpen={isMenuOpen} onClose={toggleMenu} />
     </section>
+
+    </>
   );
 }

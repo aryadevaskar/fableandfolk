@@ -1,25 +1,16 @@
 "use client";
-import { useState } from "react";
-
-import HeroSection from "./components/Hero/hero";
-import AboutSection from "./components/About/About";
-import ProjectSection from "./components/Projects/projectSection";
-import ClientSection from "./components/Client/Client";
-import TickerBand from "./components/Ticker Band/tickerband";
-import ContactForm from "./components/Contact Form/contactform";
-import Footer from "./components/Footer/footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/home/home";
+import WorkDetailsSection from "./pages/Work/workDetails"; // Adjust path if needed
 
 function App() {
   return (
-    <div>
-      <HeroSection />
-      <AboutSection />
-      <ProjectSection />
-      <ClientSection/>
-      <TickerBand text='Get in touch'/>
-      <ContactForm />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/work/:id" element={<WorkDetailsSection />} />
+      </Routes>
+    </Router>
   );
 }
 

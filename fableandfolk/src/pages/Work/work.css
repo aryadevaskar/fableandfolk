@@ -1,0 +1,92 @@
+.Our-work {
+  margin: 4rem;
+}
+
+.project-title {
+  font-size: 7rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 2.4rem;
+}
+
+.work-image h3 {
+  border: 3px solid #41241d;
+  height: 500px;
+  margin-top: 1.5rem;
+}
+
+
+.fable-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 3rem;
+  color: #3e2219; /* deep brown text */
+}
+
+.our-name,
+.our-story {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.our-name h1,
+.our-story h1 {
+  flex: 0.2 0 8rem; /* fixed width for title */
+  font-size: 3.7rem;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.2;
+  font-family: 'DM Sans', sans-serif;
+  white-space: nowrap;
+}
+
+.our-name p,
+.our-story p {
+  flex: 1;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 0;
+}
+/* This whole css is valid only until we keep images after we keep images we should re define css for this whole gallery-section*/
+.Gallery-container{
+    margin-top: 3rem;
+}
+.row-1{
+    display: flex;
+    gap: 30px;
+}
+.row-1 p{
+    border: 3px solid #41241d;
+    height: 500px;
+    width: 600px;
+}
+.row-2 ,.row-3{
+    margin-top: 1.6rem;
+    height: 500px;
+    border: 3px solid #41241d;
+}
+.quote-section{
+    display: flex;
+    
+}
+.quote-section h1{
+    font-size: 7rem;
+}
+.quote-section p{
+    font-size: 2.5rem;
+}
+
+.quote-section button{
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    font-size: 1.4rem;
+    background-color: #FFBB00;
+    margin-top: 4rem;
+    font-weight: 500;
+}
+
