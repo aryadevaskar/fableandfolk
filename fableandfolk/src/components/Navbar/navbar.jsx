@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Menu from "../Menu/menu"; // adjust the path
 import "./nav.css"; // your styles for this component
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,9 +11,9 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-logo">
+        <Link to="/" className="navbar-logo">
           F&<span className="logo-f-gold">f</span>
-        </div>
+        </Link>
         <button className="navbar-menu-button" onClick={toggleMenu}>
           Menu
         </button>

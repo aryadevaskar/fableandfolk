@@ -7,7 +7,7 @@ import TickerBand from "../../components/Ticker Band/tickerband"
 import ContactForm from "../../components/Contact Form/contactform";
 import Footer from "../../components/Footer/footer";
 import Navbar from "../../components/Navbar/navbar";
-
+import Testimonials from "../../components/Testimonials/testimonials";
 
 export default function Home()
 {
@@ -18,6 +18,7 @@ export default function Home()
       <AboutSection />
       <ProjectSection />
       <ClientSection/>
+      <Testimonials />
       <TickerBand text='Get in touch'/>
       <ContactForm />
       <Footer />
