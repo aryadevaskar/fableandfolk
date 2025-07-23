@@ -5,7 +5,7 @@ import ProjectsData from "../../Data/projectData"; // Adjust if needed
 
 export default function ProjectSection() {
   return (
-    <section className="Latest-projects">
+    <section className="Latest-projects" id="ourworks">
       <div className="section-Heading">
         <h2>Latest Projects</h2>
       </div>
@@ -17,8 +17,11 @@ export default function ProjectSection() {
             {index % 2 === 0 ? (
               <>
                 <div className="image-1">
-                  {/* Replace with <img src={project.image} /> when real images exist */}
-                  <h1>{project.imageAlt || "Here comes image"}</h1>
+                  {/* Replace with <img src={project.image} /> when real images exist  */}
+                  <Link to={`/work/${project.id}`}>
+                       <img src={project.image}  className="project-image"/>
+                    </Link>
+                    {/* <h1>{project.imageAlt || "Here comes image"}</h1> */}
                 </div>
                 <div className="p1-content">
                   <div>
@@ -50,7 +53,9 @@ export default function ProjectSection() {
                   </div>
                 </div>
                 <div className="image-1">
-                  <h1>{project.imageAlt || "Here comes image"}</h1>
+                   <Link to={`/work/${project.id}`}>
+                       <img src={project.image}  className="project-image"/>
+                    </Link>
                 </div>
               </>
             )}
