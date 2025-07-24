@@ -54,3 +54,20 @@
   .submit-button:hover {
     opacity: 0.9;
   }
+
+@media (max-width: 768px) {
+  .contact-form {
+    margin: 2rem 1.5rem;
+    padding: 0;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}

@@ -51,6 +51,8 @@
   
   .footer-middle {
     text-align: center;
+    display: flex;
+  justify-content: center;
   }
   
   .footer-brand {
@@ -76,3 +78,35 @@
   .footer-made-in {
     margin: 0;
   }
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 2.5rem 1.5rem;
+    gap: 3rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .footer-tagline {
+    flex-basis: auto; 
+    font-size: 1.5rem; 
+  }
+  
+  .footer-nav ul {
+    text-align: center; 
+  }
+
+  .footer-brand {
+    margin-top: 0; 
+  }
+
+  .footer-bottom {
+    flex-direction: column; 
+    gap: 1rem;
+  }
+}
