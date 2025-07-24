@@ -1,6 +1,7 @@
 "use client";
 import "./work.css";
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 import workData from "../../Data/workData"; // adjust path as needed
 import Footer from "../../components/Footer/footer" 
@@ -13,7 +14,9 @@ export default function WorkDetailsSection() {
   const work = workData.find((w) => w.id === parseInt(id));
 
   if (!work) return <div>Work not found</div>;
-
+  useEffect(() =>{
+    window.scrollTo(0,0);
+  },[])
   return (
     <>
       <Navbar />

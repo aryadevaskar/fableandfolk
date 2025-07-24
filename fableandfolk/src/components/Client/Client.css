@@ -72,3 +72,12 @@ margin-bottom: 1rem;
         text-align: left;
     }
 }
+
+@media (min-width:1025px) and (max-width: 1300px){
+    .client-title h1{
+        font-size: 7rem;
+    }
+    .client-content p{
+        font-size: 1.5rem;
+    }
+}

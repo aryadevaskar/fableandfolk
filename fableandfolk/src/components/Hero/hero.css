@@ -96,7 +96,6 @@
 @media (max-width: 480px) {
   /* Target very small mobile screens */
   .hero{
-    margin-top: 5rem;
     margin-bottom: 3rem;
   }
   .hero-content{
@@ -167,4 +166,18 @@
     
   }
 }
-
+@media (min-width:1025px) and (max-width:1300px){
+  .hero-title{
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-tagline{
+    gap: 25rem;
+  }
+  .hero-tagline p{
+    font-size: 2rem;
+  }
+  .hero-button button{
+    font-size: 1.5rem;
+  }
+}

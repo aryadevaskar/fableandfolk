@@ -1,3 +1,5 @@
+"use client"
+import { Link } from "react-router-dom";
 import React from 'react';
 import './Menu.css';
 
@@ -18,9 +20,9 @@ const Menu = ({ isOpen, onClose }) => {
         </ul>
       </nav>
 
-      <div className="menu-logo">
+      <Link to="/" className="menu-logo">
         F&<span className="logo-f-gold">f</span>
-      </div>
+      </Link>
     </div>
   );
 };

@@ -83,3 +83,23 @@
 .dot.active {
   background-color: #47251a;
 }
+
+@media (max-width : 480px){
+.testimonials{
+  gap: 1rem;
+  padding: 0;
+  
+}
+.testimonial-logo{
+  display: none;
+}
+.testimonial-box{
+  display: flex;
+  flex-direction: column;
+}
+.testimonials h2{
+  font-size: 3.5rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+}
