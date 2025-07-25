@@ -32,7 +32,7 @@
 .hero-title {
   
   font-size: 19vw;
-  margin-bottom: 1.5rem;
+  margin-bottom: -2rem; 
   font-family: 'DM Serif Display', serif;
 }
 
@@ -53,7 +53,7 @@
 .hero-tagline {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 32rem;
   border-top: 1px solid #41241d;
@@ -75,13 +75,10 @@
 }
 .hero-button button {
   background-color: #f9b700;
-  font-size: 1.2rem;
-  
+  font-size: 1.1rem;
   color: #41241d;
   border: 1px solid #41241d;
-  padding: 0.75rem 1rem;
-  font-weight: bold;
-  font-style: italic;
+  padding: 0.75rem 3rem;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -97,7 +94,7 @@
 @media (max-width: 480px) {
   /* Target very small mobile screens */
   .hero{
-    margin: 0 0 3rem 0;
+    margin: 11rem 0 9rem 0;
     
   }
   .hero-content{
@@ -110,14 +107,19 @@
   }
   .hero-title{
     display: flex;
-    flex-direction: column;
-    font-size: 6.5rem;
+    font-size: 4.5rem;
+    margin-bottom: 0;
   }
   .hero-1 p{
     font-size: 1.2rem;
+    font-weight: 300;
+  }
+  .hero-button{
+    margin-bottom: 1.8rem;
   }
   .hero-button button{
     font-size: 1rem;
+
   }
 }
 
@@ -126,12 +128,12 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   /* iPads and Android tablets (portrait and landscape) */
  .hero {
-    height: 100vh;
-    margin-bottom: 3rem;
+    
+    margin-bottom: 21rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 19rem;
   }
 
   .hero-content {
@@ -143,10 +145,11 @@
   }
 
   .hero-title {
-    font-size: 7.5rem;
+    font-size: 9rem;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    margin-bottom: -1rem;
+    
   }
 
   .hero-tagline {
@@ -169,12 +172,15 @@
   }
 }
 @media (min-width:1025px) and (max-width:1300px){
+  .hero{
+    margin: 30rem 0 30rem 0;
+  }
   .hero-title{
     display: flex;
-    flex-direction: column;
+    
   }
   .hero-tagline{
-    gap: 25rem;
+    gap: 5rem;
   }
   .hero-tagline p{
     font-size: 2rem;

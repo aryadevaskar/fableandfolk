@@ -7,7 +7,7 @@ export default function ProjectSection() {
   return (
     <section className="Latest-projects" id="ourworks">
       <div className="section-Heading">
-        <h2>Latest Projects</h2>
+        <h2>LATEST PROJECTS</h2>
       </div>
 
       {ProjectsData.map((project, index) => (
