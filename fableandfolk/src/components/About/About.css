@@ -17,7 +17,7 @@ padding: 4rem 2rem;
 }
 
 .about-title h1 {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   margin: 0;
   line-height: 1.1;
   padding: 1rem;
@@ -40,7 +40,7 @@ padding: 4rem 2rem;
 
 @media (max-width: 480px){
     .Our-story{
-        padding: 1rem;
+        padding: 6rem 1rem;
     }
     .about-us{
         display: flex;
@@ -57,7 +57,7 @@ padding: 4rem 2rem;
         text-align: center;
     }
     .about-content , .about-title {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 0.4rem;
         text-align: justify;
         width: 100%;
@@ -68,5 +68,18 @@ padding: 4rem 2rem;
     .hero-content{
         font-size: 1.2rem;
         text-align: left;
+    }
+    
+    .about-title h1{
+        font-size: 5.5rem;
+    }
+}
+
+@media (min-width:1025px) and (max-width: 1300px){
+    .about-title h1{
+        font-size: 7rem;
+    }
+    .about-content p{
+        font-size: 1.45rem;
     }
 }

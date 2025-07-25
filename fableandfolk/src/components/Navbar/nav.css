@@ -10,6 +10,7 @@
   font-size: 32px;
   font-weight: bold;
   color: #3d1f15; /* deep brown */
+  text-decoration: none;
 }
 
 .logo-f-gold {
@@ -28,4 +29,13 @@
 .navbar-divider {
   border: 0.5px solid #3d1f15;
   margin: 0 2rem 0 2rem;
+}
+
+@media (min-width:1025px) and (max-width: 1300px){
+  .navbar-logo{
+    font-size: 5rem;
+  }
+  .navbar-menu-button{
+    font-size: 2rem;
+  }
 }

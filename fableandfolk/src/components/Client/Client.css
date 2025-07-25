@@ -41,8 +41,8 @@ margin-bottom: 1rem;
 }
 
 @media (max-width: 480px){
-    .Our-story{
-        padding: 1rem;
+    .Client-story{
+        padding: 5rem 1rem;
     }
     .about-client{
         display: flex;
@@ -70,5 +70,14 @@ margin-bottom: 1rem;
     .hero-content{
         font-size: 1.2rem;
         text-align: left;
+    }
+}
+
+@media (min-width:1025px) and (max-width: 1300px){
+    .client-title h1{
+        font-size: 7rem;
+    }
+    .client-content p{
+        font-size: 1.5rem;
     }
 }

@@ -1,8 +1,23 @@
-import React from 'react';
+"use client"
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import './Menu.css';
 
 const Menu = ({ isOpen, onClose }) => {
   const menuClassName = `menu-overlay ${isOpen ? 'menu-overlay--open' : ''}`;
+
+   useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cleanup when component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
 
   return (
     <div className={menuClassName}> 
@@ -18,9 +33,9 @@ const Menu = ({ isOpen, onClose }) => {
         </ul>
       </nav>
 
-      <div className="menu-logo">
+      <Link to="/" className="menu-logo">
         F&<span className="logo-f-gold">f</span>
-      </div>
+      </Link>
     </div>
   );
 };
