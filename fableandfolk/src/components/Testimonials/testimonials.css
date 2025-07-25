@@ -24,7 +24,7 @@
   align-items: stretch;
   width: 100%;
   margin: auto;
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .testimonial-logo {
@@ -58,6 +58,7 @@
 
 .testimonial-text p {
   margin: 0;
+  font-weight: normal;
 }
 
 .testimonial-author {

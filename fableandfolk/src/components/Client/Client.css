@@ -41,8 +41,8 @@ margin-bottom: 1rem;
 }
 
 @media (max-width: 480px){
-    .Our-story{
-        padding: 1rem;
+    .Client-story{
+        padding: 5rem 1rem;
     }
     .about-client{
         display: flex;

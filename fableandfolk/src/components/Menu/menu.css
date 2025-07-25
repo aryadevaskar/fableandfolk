@@ -14,6 +14,7 @@
   clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
   transition: clip-path 0.7s ease-in-out;
   pointer-events: none;
+  z-index: 9999;
 }
 
 .menu-overlay--open {
@@ -109,8 +110,8 @@
   bottom: 5rem;
   right: 4.5rem;
   font-family: "DM Serif Display", serif;
-  font-size: 8rem;
-  font-weight: 600;
+  font-size: 6rem;
+  text-decoration: none;
   color: #FEF6E0;
 }
 
