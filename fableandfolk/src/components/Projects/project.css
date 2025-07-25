@@ -102,9 +102,9 @@
   transform: scale(1.2);
 }
 
-#p-2 , #p-4{
+#p-2 {
   position: absolute;
-  bottom: 0rem;
+  bottom: 0;
   left: 3px;
   background-color: #f9b700;
   color: #47251a;
