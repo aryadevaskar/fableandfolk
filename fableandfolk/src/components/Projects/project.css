@@ -1,8 +1,7 @@
 /* Overall section */
 .Latest-projects {
-  background-color: #fef6e0; /* light cream background */
+  background-color: transparent; /* light cream background */
   padding: 4rem 2rem;
-  font-family: "DM Serif Display", serif;
   color: #41241d;
   margin-top: 2rem;
 }
@@ -54,20 +53,11 @@
   height: 100%;
   object-fit: cover;
 }
-/* Right content */
-.p1-content {
-  flex: 1;
-  color: #fef6e0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-}
+
 
 /* Heading */
 .p1-content h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 4rem;
   line-height: 1.2;
 }
 
@@ -75,7 +65,7 @@
 .p1-content p {
   font-size: 1rem;
   line-height: 1.8;
-  max-width: 90%;
+ 
 }
 
 .p1-content {
@@ -84,7 +74,7 @@
   position: relative; /* Needed for absolute child */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.5rem;
   padding-bottom: 2rem; /* create room for button */
 }
@@ -112,10 +102,10 @@
   transform: scale(1.2);
 }
 
-#p-2 {
-  position: relative;
-  top: 5.8rem;
-  right: 3px;
+#p-2 , #p-4{
+  position: absolute;
+  bottom: 0rem;
+  left: 3px;
   background-color: #f9b700;
   color: #47251a;
   border: none;
@@ -128,9 +118,10 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
-#p-4 {
+/* #p-4 {
   position: relative;
   top: 5.8rem;
   right: 3px;
@@ -146,7 +137,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
-}
+} */
 
 
 @media (max-width: 480px){
@@ -178,9 +169,16 @@
 }
 }
 @media (min-width:768px) and (max-width: 1024px){
+  .p1-content{
+    display: none;
+  }
+  .p-1{
+  background-color: transparent;
+  }
   .image-1{
     min-height: 0px;
     border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   }
   #p-2 , #p-4{
     position: relative;
