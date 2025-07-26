@@ -46,15 +46,15 @@ export default function WorkDetailsSection() {
         
         <div className="Gallery-container">
           <div className="row-1">
-            <p>{work.gallery[0]}</p>
-            <p>{work.gallery[1]}</p>
+            <img src= {work.gallery[0]} alt="maya&mi1" />
+            <img src= {work.gallery[1]} alt="maya&mi2"/>
           </div>
           <div className="row-2">
-            <p>{work.gallery[2]}</p>
+            <img src={work.gallery[2]} alt="maya&mi3"/>
           </div>
-          <div className="row-3">
+          {/* <div className="row-3">
             <p>{work.gallery[3]}</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="quote-section">

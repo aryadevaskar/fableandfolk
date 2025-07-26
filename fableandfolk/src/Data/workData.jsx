@@ -9,7 +9,12 @@ const workData = [
     quote: "Our website truly feels like us",
     siteurl: "https://gayatrideviplayschool.in/",
     quoteAuthor: "-Maya,Maya&mi",
-    gallery: ["image1", "image2", "image3", "image4"],
+    gallery: 
+    [
+      "/maya&mi/maya&mi2.png", 
+      "/maya&mi/maya&mi1.png", 
+      "/maya&mi/maya&mi3.png"
+    ]
     
   },
   {
@@ -22,7 +27,12 @@ const workData = [
     quote: "They turned sound into visuals.",
     siteurl: "https://mayaandmi.com/",
     quoteAuthor: "-TinkerBand,Team",
-    gallery: ["tinker1", "tinker2", "tinker3", "tinker4"],
+    gallery: 
+    [
+      "/maya&mi/maya&mi2.png", 
+      "/maya&mi/maya&mi1.png", 
+      "/maya&mi/maya&mi3.png"
+    ]
   },
   {
     id: 3,
@@ -34,7 +44,12 @@ const workData = [
     quote: "They turned sound into visuals.",
     siteurl: "https://best-one-store-6c8d2f.webflow.io/",
     quoteAuthor: "-TinkerBand,Team",
-    gallery: ["tinker1", "tinker2", "tinker3", "tinker4"],
+    gallery: 
+    [
+      "/acent/acent1.png", 
+      "/acent/acent2.png" ,
+      "/acent/acent3.png"
+    ]
   },
   {
     id: 4,
@@ -46,7 +61,12 @@ const workData = [
     quote: "They turned sound into visuals.",
     siteurl: "https://krioenergy.com/",
     quoteAuthor: "-TinkerBand,Team",
-    gallery: ["tinker1", "tinker2", "tinker3", "tinker4"],
+     gallery: 
+    [
+      "/krioenergy/krio1.png", 
+      "/krioenergy/krio2.png", 
+      "/krioenergy/krio3.png"
+    ]
   },
   
 ];
