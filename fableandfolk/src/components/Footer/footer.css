@@ -55,6 +55,8 @@
   justify-content: center;
   overflow-y: hidden;
   container-type: inline-size;
+  overflow-x: hidden;
+
   }
   
   .footer-brand {
@@ -105,12 +107,16 @@
 
   .footer-brand {
     margin-top: 0; 
-    font-size: 4.5rem;
   }
 
   .footer-bottom {
     flex-direction: column; 
     gap: 1rem;
+  }
+
+  .footer-copyright,
+  .footer-made-in {
+    text-align: center;
   }
 }
 
