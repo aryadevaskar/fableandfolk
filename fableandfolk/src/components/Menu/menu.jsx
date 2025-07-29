@@ -27,9 +27,10 @@ const Menu = ({ isOpen, onClose }) => {
 
       <nav className="menu-navigation">
         <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/work">Work</a></li>
-          <li><a href="/contact">Contact</a></li>
+          {/* <li><a href="/" onClick={onClose}>Home</a></li> */}
+          <li><a href="#aboutus" onClick={onClose}>About</a></li>
+          <li><a href="#ourworks" onClick={onClose}>Work</a></li>
+          <li><a href="#ourcontact"onClick={onClose}>Contact</a></li>
         </ul>
       </nav>
 
