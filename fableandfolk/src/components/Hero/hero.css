@@ -190,3 +190,13 @@
     font-size: 1.5rem;
   }
 }
+
+.title-mask {
+  display: inline-block;
+  overflow: hidden;      /* This is key: it hides the text when it's outside the boundary */
+  vertical-align: bottom; /* Ensures the masks align correctly */
+}
+
+.title-span {
+  display: inline-block; /* Allows us to apply transforms like 'y' */
+}
