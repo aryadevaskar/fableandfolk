@@ -8,49 +8,59 @@ import SplitType from 'split-type';
 
 import "./Client.css";
 
-// Register the ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ClientSection() {
   const container = useRef(null);
 
   useGSAP(() => {
-    // Target the new title and paragraph elements using their classes
-    const clientTitle = new SplitType('.client-title h1', { types: 'lines' });
-    const clientContent = new SplitType('.client-content p', { types: 'lines' });
+    let clientTitle, clientContent;
 
-    // Create the animation timeline controlled by ScrollTrigger
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: container.current,
-        start: "top 75%",
-        toggleActions: "play none none none",
-        once: true,
+    // Use a short timeout to ensure the DOM is fully ready
+    const timer = setTimeout(() => {
+      if (container.current) {
+        const titleEl = container.current.querySelector('.client-title h1');
+        const contentEl = container.current.querySelector('.client-content p');
+
+        if (titleEl && contentEl) {
+          clientTitle = new SplitType(titleEl, { types: 'lines' });
+          clientContent = new SplitType(contentEl, { types: 'lines' });
+
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: container.current,
+              start: "top 75%",
+              once: true,
+            }
+          });
+
+          tl.from(clientTitle.lines, {
+            y: "100%",
+            opacity: 0,
+            stagger: 0.1,
+            duration: 0.7,
+            ease: "power2.out",
+          }).from(clientContent.lines, {
+            y: 50,
+            opacity: 0,
+            stagger: 0.04,
+            duration: 0.6,
+            ease: "power2.out",
+          }, "-=0.3");
+        }
       }
-    });
+    }, 100); // A small delay of 100ms
 
-    // 1. Animate the title lines ("So, What's Your Story?")
-    tl.from(clientTitle.lines, {
-      y: "100%",
-      opacity: 0,
-      stagger: 0.1,
-      duration: 0.7,
-      ease: "power2.out",
-    });
-
-    // 2. Animate the paragraph lines
-    tl.from(clientContent.lines, {
-      y: 50,
-      opacity: 0,
-      stagger: 0.04,
-      duration: 0.6,
-      ease: "power2.out",
-    }, "-=0.3"); // Overlap for a smooth transition
+    // The cleanup function
+    return () => {
+      clearTimeout(timer); // Clean up the timer
+      if (clientTitle) clientTitle.revert();
+      if (clientContent) clientContent.revert();
+    };
 
   }, { scope: container });
 
   return (
-    // Add the ref to the main section for ScrollTrigger to watch
     <section className="Client-story" ref={container}>
       <div className="about-client">
         <div className="client-title">

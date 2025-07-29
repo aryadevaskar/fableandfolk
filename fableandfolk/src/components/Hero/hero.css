@@ -88,6 +88,25 @@
   transform: scale(1.1);
 }
 
+.menu-open-button {
+  position: absolute;
+  top: 2.5rem;
+  right: 4rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #41241d;
+  background-color: transparent;
+  color: #41241d;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 0rem;
+}
+
+.menu-open-button:hover {
+  background-color: #41241D;
+  color: #FEF6E0;
+}
 
 
 /* Small Phones - up to 480px */
@@ -120,6 +139,11 @@
   .hero-button button{
     font-size: 1rem;
 
+  }
+
+  .menu-open-button{
+    position: absolute;
+    right: 2rem;
   }
 }
 
@@ -188,6 +212,10 @@
   }
   .hero-button button{
     font-size: 1.5rem;
+  }
+
+  .menu-open-button{
+    font-size: 3rem;
   }
 }
 

@@ -11,14 +11,15 @@
   transition: padding 0.5s ease;
   box-sizing: border-box;
   background-color: #41241D;
-  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
   transition: clip-path 0.7s ease-in-out;
   pointer-events: none;
   z-index: 9999;
 }
 
 .menu-overlay--open {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: clip-path 0.5s ease-in-out;
     pointer-events: auto;
   }
 

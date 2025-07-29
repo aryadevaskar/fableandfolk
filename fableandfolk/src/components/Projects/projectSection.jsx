@@ -4,10 +4,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import ProjectsData from "../../Data/projectData"; // Adjust if needed
+import ProjectsData from "../../Data/projectData";
 import "./project.css";
 
-// Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ProjectSection() {
@@ -50,29 +49,29 @@ export default function ProjectSection() {
         tl.from(image, {
           opacity: 0,
           scale: 0.98,
-          duration: 1,
+          duration: 0.5,
           ease: "power3.out",
         }).from(contentElements, {
           x: 40,
           opacity: 0,
           stagger: 0.1, // Stagger the h2, p, and button animations
-          duration: 1,
+          duration: 0.5,
           ease: "power3.out",
-        }, "-=0.6"); // Overlap for a seamless effect
+        },); // Overlap for a seamless effect
       } else {
         // ODD Card (index 1, 3...): Content Left, Image Right
-        tl.from(contentElements, {
+        tl.from(image, {
+          opacity: 0,
+          scale: 0.98,
+          duration: 0.5,
+          ease: "power3.out",
+        }).from(contentElements, {
           x: -40,
           opacity: 0,
           stagger: 0.1,
-          duration: 1,
+          duration: 0.5,
           ease: "power3.out",
-        }).from(image, {
-          opacity: 0,
-          scale: 0.98,
-          duration: 1,
-          ease: "power3.out",
-        }, "-=0.4");
+        });
       }
     });
 

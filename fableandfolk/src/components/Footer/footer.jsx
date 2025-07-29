@@ -20,7 +20,7 @@ const Footer = () => {
       },
       yPercent: 100,             // Start 100% of its own height below its final position
       opacity: 0,                // Start completely transparent
-      duration: 1,
+      duration: 0.7,
       ease: "power3.out",
     });
   }, { scope: container });
