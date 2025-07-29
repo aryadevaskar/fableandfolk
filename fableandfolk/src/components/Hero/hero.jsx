@@ -1,11 +1,15 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "./hero.css";
+import Menu from "../Menu/menu";
 
 export default function HeroSection() {
   const container = useRef(null);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   useGSAP(() => {
     const tl = gsap.timeline();
@@ -45,6 +49,9 @@ export default function HeroSection() {
 
   return (
     <>
+    <button className="menu-open-button" onClick={toggleMenu}>
+      Menu
+      </button>
       <section className="hero" ref={container}>
         <div className="hero-content">
           <h1 className="hero-title">
@@ -70,6 +77,7 @@ export default function HeroSection() {
           </div>
         </div>
       </section>
+      <Menu isOpen={isMenuOpen} onClose={toggleMenu} />
     </>
   );
 }
