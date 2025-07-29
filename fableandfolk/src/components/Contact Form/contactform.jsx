@@ -38,7 +38,7 @@ const ContactForm = () => {
 
   return (
     // Add the ref to your form element
-    <form ref={form} className="contact-form" onSubmit={handleSubmit}>
+    <form ref={form} className="contact-form" id= "ourcontact" onSubmit={handleSubmit}>
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="name">NAME</label>

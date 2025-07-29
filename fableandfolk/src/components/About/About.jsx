@@ -60,7 +60,9 @@ export default function AboutSection() {
   }, { scope: container });
 
   return (
-    <section className="Our-story" ref={container}>
+
+    // Add the ref to the main section so ScrollTrigger can track it
+    <section className="Our-story" id="aboutus" ref={container}>
       <div className="about-us">
         <div className="about-title">
           <h1>The Way <br/>We <span className='span'>Weave</span></h1>
