@@ -11,10 +11,10 @@
   font-size: 2.4rem;
 }
 
-.work-image h3 {
+.work-image iframe {
   border: 3px solid #41241d;
   height: 500px;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 
 
@@ -63,7 +63,7 @@
 .row-1 img{
     border: 3px solid #41241d;
     height: 500px;
-    width: 600px;
+    width: 700px;
 }
 .row-2 img{
     margin-top: 1.6rem;
@@ -97,13 +97,14 @@
   margin: 1.5rem;
 }
 .project-title{
-  font-size: 5rem;
+  font-size: 3.3rem;
 }
 .project-description{
   font-size: 1.45rem;
 }
-.work-image h3{
-height: 380px;
+.work-image iframe {
+margin-top: 3rem;
+height: 400px;
 }
 .our-name{
   display: flex;
@@ -133,12 +134,12 @@ height: 380px;
   display: flex;
   flex-direction: column;
 }
-.row-1 p{
+.row-1 img{
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
-.row-2{
-  height: 400px;
+.row-2 img{
+  height: 300px;
 }
 .quote-section h1{
   font-size: 2.5rem;
@@ -156,10 +157,10 @@ height: 380px;
 
 @media (min-width : 768px) and (max-width: 1024px){
   .project-title{
-    font-size: 9.5rem;
+    font-size: 6rem;
   }
   .project-description{
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .our-name p , .our-story p{
     font-size: 1.3rem;
@@ -168,10 +169,14 @@ height: 380px;
   .our-story p{
     padding-left: 30px;
   }
-  .row-1 p{
+  .row-1 {
+    display: flex;
+    gap: 10px;
+  }
+  .row-1 img{
     height: 380px;
   }
-  .row-2 {
+  .row-2 img{
     height: 400px;
   }
   .quote-section h1{
